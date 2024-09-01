@@ -258,16 +258,16 @@ video {
 }
 
 /*.anime-image h1 {*/
-/* position: absolute;*/
-/* color: black;*/
-/* font-size: 4rem;*/
-/* font-weight: 500;*/
-/* max-width: 100%;*/
-/* font-family: Roboto;*/
-/* top: 160px;*/
-/* text-wrap: balance;*/
-/* left: 90px;*/
-/* text-align: center;*/
+/*  position: absolute;*/
+/*  color: black;*/
+/*  font-size: 4rem;*/
+/*  font-weight: 500;*/
+/*  max-width: 100%;*/
+/*  font-family: Roboto;*/
+/*  top: 160px;*/
+/*  text-wrap: balance;*/
+/*  left: 90px;*/
+/*  text-align: center;*/
 /*}*/
 
 .anime-image img {
@@ -289,12 +289,19 @@ video {
   background-repeat: no-repeat;
 }
 
-.logo-jpg {
-  width: 100px;
-  background-color: transparent;
+
+#musicBtn {
   position: absolute;
   right: 35px;
   top: 0px;
+  background: transparent;
+  border: none;
+
+}
+
+.logo-jpg {
+  width: 100px;
+  background-color: transparent;
 }
 
 .anime1 {
@@ -313,7 +320,6 @@ video {
   /* Change to your desired text color */
   font-size: 3rem;
   letter-spacing: var(--spacing-xxs);
-  text-wrap: balance;
   text-transform: capitalize;
   /* Adjust font size */
   text-align: center;
@@ -322,6 +328,15 @@ video {
 
 .anime-name {
   position: relative;
+  width: 25ch;
+  /* Limits the width to 23 characters */
+  overflow: hidden;
+  /* Ensures anything beyond the width is hidden */
+  white-space: nowrap;
+  /* Prevents text from wrapping to the next line */
+  text-overflow: ellipsis;
+  /* Adds the ellipsis */
+  /* Ensures the h1 behaves like a block-level element */
 }
 
 .text-item:not(:last-child):after {
@@ -567,9 +582,8 @@ h2 {
   color: white;
   font-family: var(--font-family-heading);
   letter-spacing: 1px;
-  text-wrap: balance;
   width: 530px;
   height: 89%;
-  padding: 20px 30px;
+  padding: 30px 30px;
   margin: 20px;
 }
