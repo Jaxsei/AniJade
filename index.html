@@ -18,62 +18,63 @@
   <!--nav-bar-->
   <div class="nav-bar">
     <section class="search-field">
-      <input type="text" placeholder="Enter Anime">
+      <input type="text" placeholder="Enter Anime" id="searchBox">
     </section>
     <section class="search-btn">
-      <button><img src="media/images/search.png" alt="search-icon"></button>
+      <button id="searchBtn"><img src="media/images/search.png" alt="search-icon"></button>
     </section>
   </div>
 
   <!--grid layout-->
   <main class="grid-layout">
     <article class="anime-image">
-
-      <img src="media/images/test1.jpeg" alt="anime-image">
+      <img src="media/images/test1.jpeg" alt="anime-image" id="animeCover">
     </article>
     <article class="anime-info">
       <section class="anime1">
-        <h1 class="anime-name text-item">Jujutsu Kaisen</h1>
-        <h1 class="anime-season text-item">Summer 2024</h1>
+        <h1 id="animeName" class="anime-name text-item">Jujutsu Kaisen</h1>
+        <h1 class="anime-season text-item" id="animeYear">Summer 2024</h1>
       </section>
       <article class="info-section">
         <section class="anime-details">
-          <p class="rank">Rank <strong>#789</strong>
+          <p class="rank" id="rank">Rank #788
           </p>
-          <p class="popularity">popularity <strong>#934</strong>
+          <p class="popularity" id="popular">popularity #934
           </p>
-          <p class="member">Members <strong>254,789</strong>
+          <p class="member" id="members">Members 254,789
           </p>
-          <p class="favourites">Favourites <strong>9,378</strong>
+          <p class="favourites" id="favourite">Favourites 9,378
           </p>
-          <img src="media/images/logo.jpeg" alt="logo" class="logo-jpg">
+          <button id="musicBtn">
+            <img src="media/images/logo.jpg" alt="logo" class="logo-jpg">
+          </button>
         </section>
       </article>
       <article class="anime-card">
         <main class="card1 cards">
           <section>
-            <h2 class="type-tv">Type <strong>TV</strong></h2>
-            <p class="type-episode">Episodes: <strong>12</strong></p>
-            <p class="type-status">Status: <strong>Currently Airing</strong></p>
-            <p class="type-aired">Aired: <strong>Jul 3, 2024 to ?</strong></p>
-            <p class="type-premier">Premierd: <strong>Summer 2024</strong></p>
+            <h2 class="type-tv" id="typeTv">Type TV</h2>
+            <p class="type-episode" id="typeEpi">Episodes 12</p>
+            <p class="type-status" id="typeStatus">Status: Currently Airing</p>
+            <p class="type-aired" id="typeAired">Aired: Jul 3, 2024 to ?</p>
+            <p class="type-premier" id="typePremier">Premierd: Summer 2024</p>
           </section>
         </main>
         <main class="card2 cards">
           <section>
             <h1 class="type-production">Studio</h1>
-            <p class="type-producers">Producers: <strong>Kadokawa</strong></p>
-            <p class="type-broadcast">Broadcast: <strong>Wednesdays at 23:30 JST</strong></p>
-            <p class="type-license">License: <strong>None</strong></p>
-            <p class="type-studio">Studio: <strong>Doga Studio</strong></p>
+            <p class="type-producers" id="typeProducers">Producers: Kadokawa</p>
+            <p class="type-broadcast" id="typeBroadcast">Broadcast: Wednesdays at 23:30 JST</p>
+            <p class="type-license" id="typeLicense">License: None</p>
+            <p class="type-studio" id="typeStudio">Studio: Doga Studio</p>
           </section>
         </main>
         <main class="card3 cards">
           <section>
-            <p class="type-source">Source: <strong>Lightnovel</strong></p>
-            <p class="type-genre">Genre: <strong>Romance, Comedy</strong></p>
-            <p class="type-theme">Theme: <strong>School</strong></p>
-            <p class="type-duration">Duration: <strong>24 mine. per ep</strong></p>
+            <p class="type-source" id="typeSource">Source: Lightnovel</p>
+            <p class="type-genre" id="typeGenre">Genre: Romance, Comedy</p>
+            <p class="type-theme" id="typeTheme">Theme: School</p>
+            <p class="type-duration" id="typeDuration">Duration: 23 mine. per ep</p>
           </section>
         </main>
         <main class="cards-img">
@@ -82,12 +83,16 @@
       </article>
       <article class="ani-desc">
         <main class="ani-trailer">
-          <section><iframe width="560" height="315" src="https://www.youtube.com/embed/sElE_BfQ67s" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <section><iframe id="animeTrailer" width="560" height="315" src="https://www.youtube.com/embed/sElE_BfQ67s"
+              frameborder="1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </section>
         </main>
         <main class="ani-sypnosis">
           <section>
-            <p>"Jujutsu Kaisen" (JJK) is a Japanese anime and manga series written by Gege Akutami. The story follows
+            <p id="sypnosis">"Jujutsu Kaisen" (JJK) is a Japanese anime and manga series written by Gege Akutami. The
+              story follows
               Yuji Itadori, a high school student with extraordinary physical abilities who becomes involved in the
               world of jujutsu sorcery after he consumes a powerful cursed object—a finger belonging to the ancient,
               malevolent spirit Sukuna Ryoumen. To prevent Sukuna from being fully resurrected and wreaking havoc.</p>
