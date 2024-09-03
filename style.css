@@ -182,6 +182,10 @@ html {
 
 body {
   min-height: 100vh;
+  background-image: url(media/images/background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .video {
