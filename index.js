@@ -11,7 +11,7 @@ const fetchAnimeData = async (query) => {
     const response = await fetch(proxyUrl + targetUrl);
     const data = await response.json();
     const animeData = JSON.parse(data.contents);
-    console.log(animeData);
+    //console.log(animeData);
 
     if (animeData.data && animeData.data.length > 0) {
       const firstAnime = animeData.data[0];
@@ -25,7 +25,7 @@ const fetchAnimeData = async (query) => {
       const videoData = await videoResponse.json();
       videos = JSON.parse(videoData.contents);
 
-      console.log(videos); // Handle the videos data here
+      //console.log(videos); // Handle the videos data here
     } else {
       console.error('No anime found for the query.');
     }
